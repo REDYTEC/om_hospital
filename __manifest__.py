@@ -1,5 +1,6 @@
 {
     'name': "Hospital Management",
+    'author': 'RED Y TEC',
     'version': '14.0.1.0.0',
     'summary': 'Hospital Management Software',
     'sequence': 20,
