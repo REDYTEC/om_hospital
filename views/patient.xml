@@ -26,6 +26,7 @@
     <menuitem id="hospital_patient"
               name="Patients"
               parent="hospital_patient_root"
+              action="patient_action"
               sequence="10"/>
 
 </odoo>
