@@ -8,7 +8,9 @@
     'category': 'Productivity',
     'website': 'http://www.redytec.com',
     'depends': [],
-    'data': [],
+    'data': [
+        'views/patient.xml'
+    ],
     'demo': [],
     'qweb': [],
     'installable': True,
