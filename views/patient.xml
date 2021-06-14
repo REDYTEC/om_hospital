@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+
     <menuitem id="hospital_root"
               name="Hospital"
               active="False"
@@ -8,12 +9,7 @@
     <menuitem id="hospital_patient_root"
               name="Patients"
               parent="hospital_root"
-              sequence="2"/>
-
-    <menuitem id="hospital_patient_root"
-              name="Patients"
-              parent="hospital_patient_root"
-              sequence="2"/>
+              sequence="10"/>
 
     <record id="patient_action" model="ir.actions.act_window">
         <field name="name">Patients</field>
@@ -26,4 +22,5 @@
             </p>
         </field>
     </record>
+
 </odoo>
