@@ -9,6 +9,7 @@
     'website': 'http://www.redytec.com',
     'depends': [],
     'data': [
+        'security/ir.model.access.csv',
         'views/patient.xml'
     ],
     'demo': [],
