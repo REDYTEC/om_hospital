@@ -20,4 +20,4 @@ class HospitalPatient(models.Model):
         ('confirm', 'Confirmed'),
         ('done', 'Done'),
         ('cancel', 'Cancelled')
-    ], string='Status')
+    ], string='Status', default='draft')
