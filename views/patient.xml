@@ -17,13 +17,16 @@
                             <div class="oe_kanban_details">
                                 <ul>
                                     <li>
-                                        Name: <field name="name"/>
+                                        Name:
+                                        <field name="name"/>
                                     </li>
                                     <li>
-                                        Age: <field name="age"/>
+                                        Age:
+                                        <field name="age"/>
                                     </li>
                                     <li>
-                                        Gender: <field name="gender"/>
+                                        Gender:
+                                        <field name="gender"/>
                                     </li>
                                 </ul>
                             </div>
@@ -52,6 +55,9 @@
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <form>
+                <header>
+                    <field name="state" widget="statusbar"/>
+                </header>
                 <sheet>
                     <group name="group_top">
                         <group name="group_left">
