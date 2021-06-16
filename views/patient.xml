@@ -44,6 +44,8 @@
                 <field name="note"/>
                 <separator/>
                 <filter string="Male" name="male" domain="[('gender', '=', 'male')]"/>
+                <filter string="Female" name="female" domain="[('gender', '=', 'female')]"/>
+                <filter string="Other" name="other" domain="[('gender', '=', 'other')]"/>
                 <group expand="1" string="Group By">
                     <filter string="Gender" name="gender" context="{'group_by':'gender'}"/>
                     <filter string="Patient Age" name="age" context="{'group_by':'age'}"/>
