@@ -23,4 +23,4 @@ class HospitalPatient(models.Model):
     ], string='Status', default='draft')
 
     def action_confirm(self):
-        print("clicked on button")
+        self.state = 'confirm'
