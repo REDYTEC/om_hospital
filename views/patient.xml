@@ -43,10 +43,9 @@
                 <field name="name"/>
                 <field name="note"/>
                 <separator/>
-                <!--<filter name="" date=""/>
-                <group expand="1" string="">
-                    <filter string="" name="" context=""/>
-                </group>-->
+                <group expand="1" string="Group By">
+                    <filter string="Gender" name="gender" context="{'group_by':'gender'}"/>
+                </group>
             </search>
         </field>
     </record>
