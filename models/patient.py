@@ -20,7 +20,7 @@ class HospitalPatient(models.Model):
         ('confirm', 'Confirmed'),
         ('done', 'Done'),
         ('cancel', 'Cancelled')
-    ], string='Status', default='draft')
+    ], string='Status', default='draft', readonly=True)
 
     def action_confirm(self):
         self.state = 'confirm'
@@ -32,4 +32,4 @@ class HospitalPatient(models.Model):
         self.state = 'draft'
 
     def action_cancel(self):
-        self.state = 'draft'
+        self.state = 'cancel'
