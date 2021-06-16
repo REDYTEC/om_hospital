@@ -63,7 +63,8 @@
                             type="object"/>
                     <button id="button_draft" name="action_draft" string="Set to Draft" class="btn-primary"
                             type="object"/>
-                    <button id="button_cancel" name="action_cancel" string="Cancel" type="object"/>
+                    <button id="button_cancel" name="action_cancel" string="Cancel" type="object"
+                            states="draft,done,confirm"/>
                     <field name="state" widget="statusbar" statusbar_visible="draft,done,confirm"/>
                 </header>
                 <sheet>
