@@ -27,3 +27,9 @@ class HospitalPatient(models.Model):
 
     def action_done(self):
         self.state = 'done'
+
+    def action_draft(self):
+        self.state = 'draft'
+
+    def action_cancel(self):
+        self.state = 'draft'
