@@ -24,3 +24,6 @@ class HospitalPatient(models.Model):
 
     def action_confirm(self):
         self.state = 'confirm'
+
+    def action_done(self):
+        self.state = 'done'
