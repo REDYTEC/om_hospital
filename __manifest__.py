@@ -7,7 +7,7 @@
     'description': """Longer Description""",
     'category': 'Productivity',
     'website': 'http://www.redytec.com',
-    'depends': [],
+    'depends': ['sale'],
     'data': [
         'security/ir.model.access.csv',
         'views/patient.xml'
