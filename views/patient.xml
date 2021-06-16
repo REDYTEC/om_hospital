@@ -36,9 +36,6 @@
 
     <menuitem id="hospital_root"
               name="Hospital"
-<!--
-              active="False"
--->
               sequence="10"/>
 
     <menuitem id="hospital_patient_root"
