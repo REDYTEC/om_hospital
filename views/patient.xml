@@ -62,7 +62,7 @@
                     <button id="button_done" name="action_done" string="Mark As Done" class="btn-primary"
                             type="object" states="confirm"/>
                     <button id="button_draft" name="action_draft" string="Set to Draft" class="btn-primary"
-                            type="object" states="cancel,done,confirm"/>
+                            type="object" states="cancel"/>
                     <button id="button_cancel" name="action_cancel" string="Cancel" type="object"
                             states="draft,done,confirm"/>
                     <field name="state" widget="statusbar" statusbar_visible="draft,done,confirm"/>
