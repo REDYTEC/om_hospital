@@ -16,7 +16,15 @@
                         <div t-attfclass="oe_kanban_global_click">
                             <div class="oe_kanban_details">
                                 <ul>
-                                    
+                                    <li>
+                                        <field name="name"/>
+                                    </li>
+                                    <li>
+                                        <field name="age"/>
+                                    </li>
+                                    <li>
+                                        <field name="gender"/>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
