@@ -16,7 +16,7 @@
         'data/data.xml',
         'views/patient_view.xml',
         'views/sale.xml',
-        'view/kids_view.xml'
+        'views/kids_view.xml'
     ],
     'demo': [],
     'qweb': [],
