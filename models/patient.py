@@ -21,6 +21,7 @@ class HospitalPatient(models.Model):
         ('done', 'Done'),
         ('cancel', 'Cancelled')
     ], string='Status', default='draft', readonly=True, tracking=True)
+    responsible_id = fields.Many2one('res.partner', string="Responsible")
 
     def action_confirm(self):
         self.state = 'confirm'
