@@ -42,6 +42,9 @@
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <tree>
+                <strong>
+                    <field name="reference"/>
+                </strong>
                 <field name="name"/>
                 <field name="gender"/>
                 <field name="age"/>
