@@ -40,4 +40,6 @@ class HospitalPatient(models.Model):
     def create(self, vals):
         if not vals.get('note'):
             vals['note'] = 'New Patient'
+        if vals.get('reference', _('New')) == _('New'):
+            vals['reference'] = self.env['ir.sequence'].next_by_code('hospital.patient') or _('New')
         return super(HospitalPatient, self).create(vals)
