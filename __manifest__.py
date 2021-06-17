@@ -15,7 +15,8 @@
         'security/ir.model.access.csv',
         'data/data.xml',
         'views/patient_view.xml',
-        'views/sale.xml'
+        'views/sale.xml',
+        'views/kids_view.xml'
     ],
     'demo': [],
     'qweb': [],
