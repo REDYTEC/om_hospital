@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <data>
+    <data noupdate="1">
         
         <!-- Sequences for hospital.patient -->
         <record id="seq_hospital_patient" model="ir.sequence">

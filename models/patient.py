@@ -8,7 +8,7 @@ class HospitalPatient(models.Model):
     _description = "Hospital Patient"
 
     name = fields.Char(string='Name', required=True, tracking=True)
-    reference = fields.Char(string='Reference', copy=False, readonly=True, required=True, default=lambda self: _('New'))
+    reference = fields.Char(string='Patient Reference', copy=False, readonly=True, required=True, default=lambda self: _('New'))
     age = fields.Integer(string='Age', tracking=True)
     gender = fields.Selection([
         ('male', 'Male'),
