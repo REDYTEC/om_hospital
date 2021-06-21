@@ -91,5 +91,5 @@
               parent="menu_appointment_root"
               action="action_hospital_appointment"
               sequence="10"/>
-    
+
 </odoo>
