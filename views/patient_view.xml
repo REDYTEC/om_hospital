@@ -59,7 +59,7 @@
             <form>
                 <header>
                     <button id="button_confirm" name="action_confirm" string="Confirm" class="btn-primary"
-                            type="object" states="draft"/>
+                            type="object" states="draft" confirm="Do you want to confirm this action?"/>
                     <button id="button_done" name="action_done" string="Mark As Done" class="btn-primary"
                             type="object" states="confirm"/>
                     <button id="button_draft" name="action_draft" string="Set to Draft" class="btn-primary"
