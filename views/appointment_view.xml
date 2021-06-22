@@ -41,6 +41,7 @@
                         </group>
                         <group name="group_left">
                             <field name="date_appointment"/>
+                            <field name="date_checkup"/>
                             <field name="note"/>
                         </group>
                     </group>
