@@ -38,4 +38,4 @@ class HospitalAppointment(models.Model):
             vals['note'] = 'New Patient'
         if vals.get('reference', _('New')) == _('New'):
             vals['reference'] = self.env['ir.sequence'].next_by_code('hospital.appointment') or _('New')
-        return super(HospitalPatient, self).create(vals)
+        return super(HospitalAppointment, self).create(vals)
