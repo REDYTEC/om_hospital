@@ -6,7 +6,7 @@
         <field name="model">hospital.appointment</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="reference"/>
+                <field name="name"/>
                 <field name="patient_id"/>
                 <field name="state"/>
             </tree>
@@ -32,7 +32,7 @@
                 <sheet>
                     <div class="oe_tittle">
                         <h1>
-                            <field name="reference" readonly="1"/>
+                            <field name="name" readonly="1"/>
                         </h1>
                     </div>
                     <group name="group_top">
@@ -62,7 +62,7 @@
         <field name="model">hospital.appointment</field>
         <field name="arch" type="xml">
             <search string="Patients">
-                <field name="reference"/>
+                <field name="name"/>
                 <field name="patient_id"/>
                 <separator/>
                 <group expand="1" string="Group By">
