@@ -32,7 +32,7 @@
                 <sheet>
                     <div class="oe_tittle">
                         <h1>
-                            <field name="name" readonly="1"/>
+                            <field name="reference" readonly="1"/>
                         </h1>
                     </div>
                     <group name="group_top">
