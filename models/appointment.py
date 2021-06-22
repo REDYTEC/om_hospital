@@ -15,7 +15,7 @@ class HospitalAppointment(models.Model):
     gender = fields.Selection([('male', 'Male'),
         ('female', 'Female'),
         ('other', 'Other'),
-    ], string='Gender')
+    ], string='Gender', readonly=True)
     state = fields.Selection([('draft', 'Draft'), ('confirm', 'Confirmed'),
                               ('done', 'Done'), ('cancel', 'Cancelled')],
                              string='Status', default='draft', readonly=True, tracking=True)
@@ -49,5 +49,8 @@ class HospitalAppointment(models.Model):
         if self.patient_id:
             if self.patient_id.gender:
                 self.gender = self.patient_id.gender
+            if self.patient_id.note:
+                self.note = self.patient_id.note
         else:
             self.gender = ''
+            self.note = ''
