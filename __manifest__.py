@@ -18,6 +18,7 @@
         'views/sale.xml',
         'views/kids_view.xml',
         'views/patient_gender_view.xml',
+        'views/appointment_view.xml'
     ],
     'demo': [],
     'qweb': [],
