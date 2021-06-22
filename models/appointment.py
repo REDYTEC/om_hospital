@@ -44,13 +44,13 @@ class HospitalAppointment(models.Model):
         res = super(HospitalAppointment, self).create(vals)
         return res
 
-    @api.onchange('patient_id')
-    def onchange_patient_id(self):
-        if self.patient_id:
-            if self.patient_id.gender:
-                self.gender = self.patient_id.gender
-            if self.patient_id.note:
-                self.note = self.patient_id.note
-        else:
-            self.gender = ''
-            self.note = ''
+#    @api.onchange('patient_id')
+#    def onchange_patient_id(self):
+#        if self.patient_id:
+ #           if self.patient_id.gender:
+  #              self.gender = self.patient_id.gender
+   #         if self.patient_id.note:
+    #            self.note = self.patient_id.note
+     #   else:
+      #      self.gender = ''
+       #     self.note = ''
