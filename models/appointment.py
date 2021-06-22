@@ -16,6 +16,7 @@ class HospitalAppointment(models.Model):
         ('cancel', 'Cancelled')
     ], string='Status', default='draft', readonly=True, tracking=True)
     note = fields.Text(string='Description')
+    date_appointment = fields.Date(string="Date")
 
     def action_confirm(self):
         self.state = 'confirm'

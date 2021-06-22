@@ -40,6 +40,7 @@
                             <field name="patient_id"/>
                         </group>
                         <group name="group_left">
+                            <field name="date_appointment"/>
                             <field name="note"/>
                         </group>
                     </group>
