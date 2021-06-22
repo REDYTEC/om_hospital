@@ -64,7 +64,7 @@
                 <!--<field name="patient_id"/>-->
                 <separator/>
                 <group expand="1" string="Group By">
-                    <filter string="Gender" name="gender" context="{'group_by':'patient_id'}"/>
+                    <!--<filter string="Gender" name="gender" context="{'group_by':'patient_id'}"/>-->
                 </group>
             </search>
         </field>
