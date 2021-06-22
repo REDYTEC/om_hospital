@@ -12,6 +12,11 @@ class HospitalAppointment(models.Model):
                        default=lambda self: _('New'))
     patient_id = fields.Many2one('hospital.patient', string='Patient', required=True)
     age = fields.Integer(string='Age', related='patient_id.age', tracking=True)
+    gender = fields.Selection([
+        ('male', 'Male'),
+        ('female', 'Female'),
+        ('other', 'Other'),
+    ], string='Gender')
     state = fields.Selection([('draft', 'Draft'), ('confirm', 'Confirmed'),
                               ('done', 'Done'), ('cancel', 'Cancelled')],
                              string='Status', default='draft', readonly=True, tracking=True)
