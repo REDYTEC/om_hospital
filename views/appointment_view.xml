@@ -38,6 +38,7 @@
                     <group name="group_top">
                         <group name="group_left">
                             <field name="patient_id"/>
+                            <field name="age"/>
                         </group>
                         <group name="group_left">
                             <field name="date_appointment"/>
