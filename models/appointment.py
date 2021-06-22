@@ -15,7 +15,7 @@ class HospitalAppointment(models.Model):
     gender = fields.Selection([('male', 'Male'),
         ('female', 'Female'),
         ('other', 'Other'),
-    ], string='Gender')
+    ], string='Gender', readonly=True)
     state = fields.Selection([('draft', 'Draft'), ('confirm', 'Confirmed'),
                               ('done', 'Done'), ('cancel', 'Cancelled')],
                              string='Status', default='draft', readonly=True, tracking=True)
