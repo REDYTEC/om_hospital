@@ -57,17 +57,6 @@
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <form>
-                <header>
-                    <button id="button_confirm" name="action_confirm" string="Confirm" class="btn-primary"
-                            type="object" states="draft" confirm="Do you want to confirm this action?"/>
-                    <button id="button_done" name="action_done" string="Mark As Done" class="btn-primary"
-                            type="object" states="confirm"/>
-                    <button id="button_draft" name="action_draft" string="Set to Draft" class="btn-primary"
-                            type="object" states="cancel"/>
-                    <button id="button_cancel" name="action_cancel" string="Cancel" type="object"
-                            states="draft,done,confirm" confirm="You sure you want to cancel?"/>
-                    <field name="state" widget="statusbar" statusbar_visible="draft,done,confirm"/>
-                </header>
                 <sheet>
                     <div class="oe_tittle">
                         <h1>
@@ -86,11 +75,6 @@
                         </group>
                     </group>
                 </sheet>
-                <div class="oe_chatter">
-                    <field name="message_follower_ids"/>
-                    <field name="activity_ids"/>
-                    <field name="message_ids"/>
-                </div>
             </form>
         </field>
     </record>

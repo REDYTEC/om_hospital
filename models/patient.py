@@ -16,25 +16,7 @@ class HospitalPatient(models.Model):
         ('other', 'Other'),
     ], required=True, default='other',)
     note = fields.Text(string='Description', tracking=True)
-    state = fields.Selection([
-        ('draft', 'Draft'),
-        ('confirm', 'Confirmed'),
-        ('done', 'Done'),
-        ('cancel', 'Cancelled')
-    ], string='Status', default='draft', readonly=True, tracking=True)
     responsible_id = fields.Many2one('res.partner', string="Responsible")
-
-    def action_confirm(self):
-        self.state = 'confirm'
-
-    def action_done(self):
-        self.state = 'done'
-
-    def action_draft(self):
-        self.state = 'draft'
-
-    def action_cancel(self):
-        self.state = 'cancel'
 
     @api.model
     def create(self, vals):
