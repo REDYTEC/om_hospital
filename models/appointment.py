@@ -52,4 +52,3 @@ class HospitalAppointment(models.Model):
                 self.gender = self.patient_id.gender
         else:
             self.gender = ''
-        return self.gender
