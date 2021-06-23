@@ -50,3 +50,6 @@ class HospitalAppointment(models.Model):
         if self.patient_id:
             if self.patient_id.gender:
                 self.gender = self.patient_id.gender
+        else:
+            self.gender = ''
+        return self.gender
