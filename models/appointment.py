@@ -16,7 +16,7 @@ class HospitalAppointment(models.Model):
         ('male', 'Male'),
         ('female', 'Female'),
         ('other', 'Other'),
-    ], string='Gender', readonly=True)
+    ], string='Gender', readonly=True, related='patient_id.gender')
     state = fields.Selection([('draft', 'Draft'), ('confirm', 'Confirmed'),
                               ('done', 'Done'), ('cancel', 'Cancelled')], default='draft',
                              string='Status', tracking=True)
@@ -48,7 +48,5 @@ class HospitalAppointment(models.Model):
     @api.onchange('patient_id')
     def onchange_patient_id(self):
         if self.patient_id:
-            if self.patient_id.gender:
-                self.gender = self.patient_id.gender
-        else:
-            self.gender = ''
+            if self.patient_id.note:
+                self.note = self.patient_id.note
