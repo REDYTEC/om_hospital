@@ -17,7 +17,7 @@ class HospitalAppointment(models.Model):
     note = fields.Text(string='Description', tracking=True)
     date_appointment = fields.Date(string='Date')
     date_checkup = fields.Datetime(string='Check Up Date')
-    time = fields.Float(string='Time', compute="_compute_time")
+    time = fields.Float(string='Time')
 
     def action_confirm(self):
         self.state = 'confirm'
