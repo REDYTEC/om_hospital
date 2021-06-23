@@ -42,6 +42,7 @@
                         <group name="group_left">
                             <field name="date_appointment"/>
                             <field name="date_checkup"/>
+                            <field name="time" widget="float_time"/>
                             <field name="note"/>
                         </group>
                     </group>
