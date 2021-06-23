@@ -50,3 +50,5 @@ class HospitalAppointment(models.Model):
         if self.patient_id:
             if self.patient_id.note:
                 self.note = self.patient_id.note
+        else:
+            self.note = ''
