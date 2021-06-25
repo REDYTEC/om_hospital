@@ -17,7 +17,10 @@ class HospitalPatient(models.Model):
     ], required=True, default='other',)
     note = fields.Text(string='Description', tracking=True)
     responsible_id = fields.Many2one('res.partner', string="Responsible")
-    appointment_count = fields.Integer(string='Appointment Count')
+    appointment_count = fields.Integer(string='Appointment Count', compute='_compute_appointment_count')
+
+    def _compute_appointment_count(self):
+        return 10
 
 
     @api.model
