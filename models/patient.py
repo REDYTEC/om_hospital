@@ -17,6 +17,8 @@ class HospitalPatient(models.Model):
     ], required=True, default='other',)
     note = fields.Text(string='Description', tracking=True)
     responsible_id = fields.Many2one('res.partner', string="Responsible")
+    appointment_count = fields.Integer(string='Appointment Count')
+
 
     @api.model
     def create(self, vals):
