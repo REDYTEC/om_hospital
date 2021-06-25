@@ -21,7 +21,7 @@ class HospitalPatient(models.Model):
 
     def _compute_appointment_count(self):
         appointment_count = self.env['hospital.appointment'].search_count([('patient_id', '=', self.id)])
-        self.appointment_count = 10
+        self.appointment_count = appointment_count
 
 
     @api.model
