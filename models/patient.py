@@ -20,7 +20,7 @@ class HospitalPatient(models.Model):
     appointment_count = fields.Integer(string='Appointment Count', compute='_compute_appointment_count')
 
     def _compute_appointment_count(self):
-        return 10
+        self.appointment_count = 10
 
 
     @api.model
