@@ -58,8 +58,8 @@
         <field name="arch" type="xml">
             <form>
                 <header>
-                    <button id="button_create_appointment" name="%(action_create_appointment)d" string="Create Apointmnet"
-                            class="btn-primary" type="action"/>
+                    <button id="button_create_appointment" name="%(om_hospital.action_create_appointment)d"
+                            string="Create Appointment" class="btn-primary" type="action"/>
                 </header>
                 <sheet>
                     <div class="oe_tittle">
