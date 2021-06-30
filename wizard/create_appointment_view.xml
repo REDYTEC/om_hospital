@@ -24,6 +24,7 @@
         <field name="res_model">create.appointment.wizard</field>
         <field name="view_mode">form</field>
         <field name="view_id" ref="view_create_appointment_form"/>
+<!--     This allows the action to appear in a pop up, without it, thw action would appear in a new view-->
         <field name="target">new</field>
     </record>
 
