@@ -33,3 +33,9 @@ class HospitalPatient(models.Model):
         if vals.get('reference', _('New')) == _('New'):
             vals['reference'] = self.env['ir.sequence'].next_by_code('hospital.patient') or _('New')
         return super(HospitalPatient, self).create(vals)
+
+    @api.model
+    def default_get(self, fields):
+        res = super(HospitalPatient, self).default_get(fields)
+        res['gender'] = 'male'
+        return res
