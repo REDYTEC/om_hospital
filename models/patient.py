@@ -20,6 +20,7 @@ class HospitalPatient(models.Model):
     appointment_count = fields.Integer(string='Appointment Count', compute='_compute_appointment_count')
 
     def _compute_appointment_count(self):
+        # para evitar problemas con que self tome varios valores a la vez, se pasa la funcion por un for
         for rec in self:
             appointment_count = self.env['hospital.appointment'].search_count([('patient_id', '=', rec.id)])
             rec.appointment_count = appointment_count
