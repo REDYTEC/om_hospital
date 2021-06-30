@@ -7,3 +7,7 @@ class CreateAppointmentWizard(models.TransientModel):
     _description = 'Create Appointment Wizard'
 
     name = fields.Char(string='Name', required=True)
+    patient_id = fields.Many2one('hospital.patient', string='Patient', required=True)
+
+    def action_create_appointment(self):
+        print("Clicked button")
