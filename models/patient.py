@@ -14,7 +14,7 @@ class HospitalPatient(models.Model):
         ('male', 'Male'),
         ('female', 'Female'),
         ('other', 'Other'),
-    ], required=True, default='male',)
+    ], required=True, default='other',)
     note = fields.Text(string='Description', tracking=True)
     responsible_id = fields.Many2one('res.partner', string="Responsible")
     appointment_count = fields.Integer(string='Appointment Count', compute='_compute_appointment_count')
@@ -37,5 +37,7 @@ class HospitalPatient(models.Model):
     @api.model
     def default_get(self, fields):
         res = super(HospitalPatient, self).default_get(fields)
-        res['gender'] = 'other'
+        if not res.get('gender'):
+            # if there is no gender in res directory, assign default value = to male
+            res['gender'] = 'male'
         return res
