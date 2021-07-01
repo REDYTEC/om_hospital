@@ -16,3 +16,11 @@ class CreateAppointmentWizard(models.TransientModel):
             'date_appointment': self.date_appointment
         }
         self.env['hospital.appointment'].create(vals)
+        return {
+            'name': _('Appointment'),
+            'type': 'ir.actions.act_window',
+            'view_mode': 'form',
+            'res_model': 'hospital.appointment',
+            'red_id': self.id,
+            'target': 'new',
+        }
