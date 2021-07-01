@@ -10,18 +10,17 @@ class CreateAppointmentWizard(models.TransientModel):
     patient_id = fields.Many2one('hospital.patient', string='Patient', required=True)
 
     def action_create_appointment(self):
-        print("Clicked button")
         vals = {
             'patient_id': self.patient_id.id,
             'date_appointment': self.date_appointment
         }
-        self.env['hospital.appointment'].create(vals)
+        appointment_rec = self.env['hospital.appointment'].create(vals)
         return {
             'name': _('Appointment'),
             'type': 'ir.actions.act_window',
             'view_mode': 'form',
             'res_model': 'hospital.appointment',
-            'red_id': self.id,
+            'red_id': appointment_rec.id,
             # activate if want to appear as a pop up
             # 'target': 'new',
         }
