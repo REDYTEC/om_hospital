@@ -8,13 +8,14 @@ class HospitalPatient(models.Model):
     _description = "Hospital Patient"
 
     name = fields.Char(string='Name', required=True, tracking=True)
-    reference = fields.Char(string='Patient Reference', copy=False, readonly=True, required=True, default=lambda self: _('New'))
+    reference = fields.Char(string='Patient Reference', copy=False, readonly=True, required=True,
+                            default=lambda self: _('New'))
     age = fields.Integer(string='Age', tracking=True)
     gender = fields.Selection([
         ('male', 'Male'),
         ('female', 'Female'),
         ('other', 'Other'),
-    ], required=True, default='other',)
+    ], required=True, default='other', )
     note = fields.Text(string='Description', tracking=True)
     responsible_id = fields.Many2one('res.partner', string="Responsible")
     appointment_count = fields.Integer(string='Appointment Count', compute='_compute_appointment_count')
@@ -24,7 +25,6 @@ class HospitalPatient(models.Model):
         for rec in self:
             appointment_count = self.env['hospital.appointment'].search_count([('patient_id', '=', rec.id)])
             rec.appointment_count = appointment_count
-
 
     @api.model
     def create(self, vals):
