@@ -11,3 +11,8 @@ class CreateAppointmentWizard(models.TransientModel):
 
     def action_create_appointment(self):
         print("Clicked button")
+        vals = {
+            'patient_id': self.patient_id.id,
+            'date_appointment': self.date_appointment
+        }
+        self.env['hospital.appointment'].create(vals)
