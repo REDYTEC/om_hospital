@@ -22,5 +22,6 @@ class CreateAppointmentWizard(models.TransientModel):
             'view_mode': 'form',
             'res_model': 'hospital.appointment',
             'red_id': self.id,
-            'target': 'new',
+            # activate if want to appear as a pop up
+            # 'target': 'new',
         }
