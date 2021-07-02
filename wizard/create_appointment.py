@@ -29,4 +29,5 @@ class CreateAppointmentWizard(models.TransientModel):
         # action = self.env.ref('om_hospital.action_hospital_appointment').read()[0]
         # action['domain'] = [('patient_id', '=', self.patient_id.id)]
         action = self.env["ir.actions.act_window"]._for_xml_id("om_hospital.action_hospital_appointment")
+        action['domain'] = [('patient_id', '=', self.patient_id.id)]
         return action
