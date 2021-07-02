@@ -31,6 +31,7 @@ class CreateAppointmentWizard(models.TransientModel):
         action = self.env.ref('om_hospital.action_hospital_appointment').read()[0]
         action['domain'] = [('patient_id', '=', self.patient_id.id)]
         # return action
+        # does the same as the above expression just other way to write it
         return {
             'type': 'ir.actions.act_window',
             'name': 'Appointment',
