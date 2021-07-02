@@ -12,7 +12,7 @@ class CreateAppointmentWizard(models.TransientModel):
     def action_create_appointment(self):
         vals = {
             'patient_id': self.patient_id.id,
-            'date_appointmnent': self.date_appointment
+            'date_appointment': self.date_appointment
         }
         appointment_rec = self.env['hospital.appointment'].create(vals)
         return {
