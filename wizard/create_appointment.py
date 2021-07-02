@@ -26,12 +26,17 @@ class CreateAppointmentWizard(models.TransientModel):
         }
 
     def action_view_appointment(self):
-        # This two statements do the same thing
+        # method 1
         # action = self.env["ir.actions.act_window"]._for_xml_id("om_hospital.action_hospital_appointment")
-        action = self.env.ref('om_hospital.action_hospital_appointment').read()[0]
-        action['domain'] = [('patient_id', '=', self.patient_id.id)]
+        # action['domain'] = [('patient_id', '=', self.patient_id.id)]
         # return action
-        # does the same as the above expression just other way to write it
+
+        # method 2
+        # action = self.env.ref('om_hospital.action_hospital_appointment').read()[0]
+        # action['domain'] = [('patient_id', '=', self.patient_id.id)]
+        # return action
+        
+        # method 3
         return {
             'type': 'ir.actions.act_window',
             'name': 'Appointment',
