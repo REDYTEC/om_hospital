@@ -24,3 +24,7 @@ class CreateAppointmentWizard(models.TransientModel):
             # activate if want to appear as a pop up
             # 'target': 'new',
         }
+
+    def action_view_appointment(self):
+        action = self.env.ref('om_hospital.action_hospital_appointment').read()[0]
+        return action
