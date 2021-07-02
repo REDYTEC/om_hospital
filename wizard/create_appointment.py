@@ -18,8 +18,9 @@ class CreateAppointmentWizard(models.TransientModel):
         return {
             'name': _('Appointment'),
             'type': 'ir.actions.act_window',
-            'view_model': 'form',
+            'view_mode': 'form',
             'res_model': 'hospital.appointment',
-            'res_id': appointment_rec.id,
+            'red_id': appointment_rec.id,
+            # activate if want to appear as a pop up
             'target': 'new',
         }
