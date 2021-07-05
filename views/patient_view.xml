@@ -14,9 +14,6 @@
                 <templates>
                     <t t-name="kanban-box">
                         <div t-attf-class="oe_kanban_global_click">
-                            <div class="o_kanban_image d-md-none" t-attf-style="background-image:url('#{kanban_image('hospital.patient', 'image')}')">
-                                <img class="o_kanban_image_inner_pic" t-att-src="kanban_image('hospital.patient', 'image')"/>
-                            </div>
                             <div class="oe_kanban_details">
                                 <ul>
                                     <li>
