@@ -62,6 +62,7 @@
                             string="Create Appointment" class="btn-primary" type="action"/>
                 </header>
                 <sheet>
+                    <field name="image" widget="image" class="oe_avatar"/>
                     <div class="oe_tittle">
                         <h1>
                             <field name="reference" readonly="1"/>
