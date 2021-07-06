@@ -15,7 +15,7 @@
                 <field name="gender"/>
                 <field name="date_appointment" optional="show"/>
                 <field name="date_checkup"/>
-                <field name="time" widget="float_time"/>
+                <field name="time" widget="float_time" optional="hide"/>
                 <field name="note"/>
                 <field name="state"/>
             </tree>
