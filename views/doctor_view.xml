@@ -108,7 +108,7 @@
     <menuitem id="menu_doctor_root"
               name="Doctors"
               parent="menu_hospital_root"
-              sequence="10"/>
+              sequence="20"/>
 
     <menuitem id="menu_doctor"
               name="Doctors"

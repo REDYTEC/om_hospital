@@ -124,7 +124,7 @@
     <menuitem id="menu_patient_root"
               name="Patients"
               parent="menu_hospital_root"
-              sequence="20"/>
+              sequence="10"/>
 
     <menuitem id="menu_patient"
               name="Patients"

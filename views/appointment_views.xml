@@ -94,7 +94,7 @@
     <menuitem id="menu_appointment_root"
               name="Appointments"
               parent="menu_hospital_root"
-              sequence="20"/>
+              sequence="30"/>
 
     <menuitem id="menu_appointment"
               name="Appointments"
