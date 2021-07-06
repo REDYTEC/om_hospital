@@ -53,6 +53,7 @@
                             <field name="age"/>
                         </group>
                         <group name="group_left">
+                            <field name="doctor_id"/>
                             <field name="date_appointment"/>
                             <field name="date_checkup"/>
                             <field name="time" widget="float_time"/>
