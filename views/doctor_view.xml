@@ -5,7 +5,7 @@
         <field name="name">hospital.doctor.kanban</field>
         <field name="model">hospital.doctor</field>
         <field name="arch" type="xml">
-            <kanban>
+            <kanban sample="1">
                 <field name="id"/>
                 <field name="doctor_name"/>
                 <field name="gender"/>
