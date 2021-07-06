@@ -38,7 +38,7 @@
         <field name="name">hospital.doctor.tree</field>
         <field name="model">hospital.doctor</field>
         <field name="arch" type="xml">
-            <tree>
+            <tree sample="1">
                 <field name="doctor_name"/>
                 <field name="gender"/>
                 <field name="age"/>
