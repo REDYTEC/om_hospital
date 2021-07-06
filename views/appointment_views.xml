@@ -11,6 +11,12 @@
                 </header>
                 <field name="name"/>
                 <field name="patient_id"/>
+                <field name="age"/>
+                <field name="gender"/>
+                <field name="date_appointment"/>
+                <field name="date_checkup"/>
+                <field name="time" widget="float_time"/>
+                <field name="note"/>
                 <field name="state"/>
             </tree>
         </field>
