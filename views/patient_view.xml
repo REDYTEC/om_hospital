@@ -18,7 +18,7 @@
                                 <ul>
                                     <li>
                                         <strong>
-                                            ID:
+                                            ID: \n
                                             <field name="reference"/>
                                         </strong>
                                     </li>
