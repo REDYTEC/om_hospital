@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+
 <!--make invisible client info if user is sales admin-->
     <record id="view_order_form_cust_ref_readonly" model="ir.ui.view">
         <field name="name">sale.order.form.readonly.cust</field>
@@ -12,7 +13,6 @@
             </field>
         </field>
     </record>
-
 <!--****************************************************-->
 
     <record id="view_order_form_inherited" model="ir.ui.view">
