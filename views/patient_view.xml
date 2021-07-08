@@ -17,6 +17,12 @@
                             <div class="oe_kanban_details">
                                 <ul>
                                     <li>
+                                        <strong>
+                                            ID:
+                                            <field name="reference"/>
+                                        </strong>
+                                    </li>
+                                    <li>
                                         Name:
                                         <field name="name"/>
                                     </li>
