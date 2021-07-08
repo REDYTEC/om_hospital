@@ -5,7 +5,7 @@
         <field name="name">hospital.patient.kanban</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
-            <kanban>
+            <kanban default_order="id asc">
                 <field name="id"/>
                 <field name="name"/>
                 <field name="gender"/>
