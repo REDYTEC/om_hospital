@@ -7,7 +7,7 @@ class HospitalAppointment(models.Model):
     _name = "hospital.appointment"
     _inherit = ["mail.thread", 'mail.activity.mixin']
     _description = "Hospital Appointment"
-    _order = "name desc"
+    _order = "doctor_id,age,name"
 
     name = fields.Char(string='Appointment Reference', copy=False, readonly=True, required=True,
                        default=lambda self: _('New'))
