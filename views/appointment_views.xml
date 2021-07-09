@@ -61,6 +61,11 @@
                             <field name="note"/>
                         </group>
                     </group>
+                    <notebook>
+                        <page string="Doctor Prescription" name="doctor_pescription">
+                            
+                        </page>
+                    </notebook>
                 </sheet>
                 <div class="oe_chatter">
                     <field name="message_follower_ids"/>
