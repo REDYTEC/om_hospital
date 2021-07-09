@@ -70,7 +70,9 @@
 
                         </page>
                         <page string="Other Info" name="other_info">
-                            <field name="note"/>
+                            <group>
+                               <field name="note"/>
+                            </group>
                         </page>
                     </notebook>
                 </sheet>
