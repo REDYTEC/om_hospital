@@ -27,6 +27,7 @@ class HospitalAppointment(models.Model):
     date_appointment = fields.Date(string='Date')
     date_checkup = fields.Datetime(string='Check Up Date')
     time = fields.Float(string='Time')
+    prescription = fields.Char(string='Prescription')
 
     def action_confirm(self):
         self.state = 'confirm'
