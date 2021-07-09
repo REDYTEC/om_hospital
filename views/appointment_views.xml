@@ -58,7 +58,6 @@
                             <field name="date_appointment"/>
                             <field name="date_checkup"/>
                             <field name="time" widget="float_time"/>
-                            <field name="note"/>
                         </group>
                     </group>
                     <notebook>
@@ -71,7 +70,7 @@
 
                         </page>
                         <page string="Other Info" name="other_info">
-                            
+                            <field name="note"/>
                         </page>
                     </notebook>
                 </sheet>
