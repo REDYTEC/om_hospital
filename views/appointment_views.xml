@@ -68,7 +68,10 @@
                         </page>
                         <page string="Medicine" name="medicine">
                             <field name="prescription_line_ids">
-
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="qty"/>
+                                </tree>
                             </field>
                         </page>
                         <page string="Other Info" name="other_info">
