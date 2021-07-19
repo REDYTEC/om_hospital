@@ -74,8 +74,12 @@
                                 </tree>
                                 <form>
                                     <group>
-                                        <field name="name"/>
-                                        <field name="qty"/>
+                                        <group>
+                                            <field name="name"/>
+                                        </group>
+                                        <group>
+                                            <field name="qty"/>
+                                        </group>
                                     </group>
                                 </form>
                             </field>
