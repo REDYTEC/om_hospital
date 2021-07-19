@@ -28,6 +28,8 @@ class HospitalAppointment(models.Model):
     date_checkup = fields.Datetime(string='Check Up Date')
     time = fields.Float(string='Time')
     prescription = fields.Char(string='Prescription')
+    prescription_line_ids = fields.One2many('appointment.prescription.lines', 'appointment_id',
+                                            string='Prescription Lines')
 
     def action_confirm(self):
         self.state = 'confirm'
@@ -59,3 +61,12 @@ class HospitalAppointment(models.Model):
         else:
             self.note = ''
             self.gender = ''
+
+
+class AppointmentPrescriptionLines(models.Model):
+    _name = "appointment.prescription.lines"
+    _description = "Appointment Prescription Lines"
+
+    name = fields.Char(string='Medicine')
+    qty = fields.Integer(string='Quantity')
+    appointment_id = fields.One2many('hospital.appointment', string='Appointment')
