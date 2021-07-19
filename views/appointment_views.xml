@@ -72,6 +72,12 @@
                                     <field name="name"/>
                                     <field name="qty"/>
                                 </tree>
+                                <form>
+                                    <group>
+                                        <field name="name"/>
+                                        <field name="qty"/>
+                                    </group>
+                                </form>
                             </field>
                         </page>
                         <page string="Other Info" name="other_info">
