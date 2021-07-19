@@ -69,4 +69,4 @@ class AppointmentPrescriptionLines(models.Model):
 
     name = fields.Char(string='Medicine')
     qty = fields.Integer(string='Quantity')
-    appointment_id = fields.One2many('hospital.appointment', string='Appointment')
+    appointment_id = fields.Many2one('hospital.appointment', string='Appointment')
