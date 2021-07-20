@@ -21,6 +21,7 @@ class HospitalPatient(models.Model):
     responsible_id = fields.Many2one('res.partner', string="Responsible")
     appointment_count = fields.Integer(string='Appointment Count', compute='_compute_appointment_count')
     image = fields.Binary(string='Patient Image')
+    appointment_ids = fields.One2many('hospital.appointment', 'patient_id', string="Appointments")
 
     def _compute_appointment_count(self):
         # para evitar problemas con que self tome varios valores a la vez, se pasa la funcion por un for

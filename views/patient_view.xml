@@ -89,6 +89,13 @@
                             <field name="note"/>
                         </group>
                     </group>
+                    <notebook>
+                        <page>
+                            <field name="appointment_ids">
+                                
+                            </field>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
