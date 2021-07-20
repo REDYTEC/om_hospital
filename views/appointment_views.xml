@@ -69,6 +69,7 @@
                         <page string="Medicine" name="medicine">
                             <field name="prescription_line_ids">
                                 <tree editable="top">
+<!--                            <tree editable="bottom"/>-->
                                     <field name="name"/>
                                     <field name="qty"/>
                                 </tree>
