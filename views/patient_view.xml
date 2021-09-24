@@ -90,9 +90,9 @@
                         </group>
                     </group>
                     <notebook>
-                        <page>
+                        <page string="Appointments" name="appointments">
                             <field name="appointment_ids">
-                                
+
                             </field>
                         </page>
                     </notebook>

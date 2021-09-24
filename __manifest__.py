@@ -9,7 +9,8 @@
     'website': 'http://www.redytec.com',
     'depends': [
         'sale',
-        'mail'
+        'mail',
+        'website'
     ],
     'data': [
         'security/ir.model.access.csv',
@@ -21,7 +22,8 @@
         'views/sale.xml',
         'views/kids_view.xml',
         'views/patient_gender_view.xml',
-        'views/appointment_views.xml'
+        'views/appointment_views.xml',
+        'views/website_form.xml',
     ],
     'demo': [],
     'qweb': [],
