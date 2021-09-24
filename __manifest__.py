@@ -10,7 +10,6 @@
     'depends': [
         'sale',
         'mail',
-        'website'
     ],
     'data': [
         'security/ir.model.access.csv',
@@ -23,7 +22,6 @@
         'views/kids_view.xml',
         'views/patient_gender_view.xml',
         'views/appointment_views.xml',
-        'views/website_form.xml',
     ],
     'demo': [],
     'qweb': [],
